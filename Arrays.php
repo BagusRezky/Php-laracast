@@ -7,6 +7,28 @@
     <title>Arrays</title>
 </head>
 <body>
+    <h1>Recommended Books</h1>
+
+    <?php
+        $books =[
+            "Do Andorid Dream of Eletric Sheep",
+            "The Langoliers",
+            "Hail Mary"
+        ];
+    ?>
+    <ul>
+        <?php foreach ($books as $book){
+            echo "<li>$book</li>";
+        }
+        ?>
+    </ul>
+
+    or
     
+    <ul>
+        <?php foreach ($books as $book) : ?>
+            <li><?= $book ?></li>
+        <?php endforeach; ?>
+    </ul>
 </body>
 </html>
