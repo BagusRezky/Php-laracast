@@ -7,6 +7,29 @@
     <title>Associative Arrays</title>
 </head>
 <body>
-    
+    <?php
+        $books =[
+            [
+            'name' => "Do Andorid Dream of Eletric Sheep",
+            'author' => "The Langoliers",
+            'purchaseUrl' => "Hail Mary"
+            ],
+            [
+                'name' => "Do Andorid Dream of Eletric Sheep",
+                'author' => "The Langoliers",
+                'purchaseUrl' => "Hail Mary"
+            ]
+        ];
+    ?>
+
+    <ul>
+        <?php foreach ($books as $book) : ?>
+            <li>
+                <a href="<?= $book['purchaseUrl']?>">
+                    <?= $book['name']; ?>
+                </a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
 </body>
 </html>
